@@ -8,7 +8,7 @@ namespace E_LearningProject.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\ProjectModels;Initial Catalog=GraduateProjectDB;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Server=GHOST\\SQLEXPRESS;Database=GraduateProjectDB;Integrated Security=True;Encrypt=False;");
         }
         public DbSet<User> Users { get; set; }
 
